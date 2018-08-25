@@ -1,0 +1,12 @@
+C:\Users\Home\source\repos\MegaFilme\MegaFilme\bin\Debug\netcoreapp2.0\MegaFilme.deps.json
+C:\Users\Home\source\repos\MegaFilme\MegaFilme\bin\Debug\netcoreapp2.0\MegaFilme.runtimeconfig.json
+C:\Users\Home\source\repos\MegaFilme\MegaFilme\bin\Debug\netcoreapp2.0\MegaFilme.runtimeconfig.dev.json
+C:\Users\Home\source\repos\MegaFilme\MegaFilme\bin\Debug\netcoreapp2.0\MegaFilme.dll
+C:\Users\Home\source\repos\MegaFilme\MegaFilme\bin\Debug\netcoreapp2.0\MegaFilme.pdb
+C:\Users\Home\source\repos\MegaFilme\MegaFilme\obj\Debug\netcoreapp2.0\MegaFilme.csprojAssemblyReference.cache
+C:\Users\Home\source\repos\MegaFilme\MegaFilme\obj\Debug\netcoreapp2.0\MegaFilme.csproj.CoreCompileInputs.cache
+C:\Users\Home\source\repos\MegaFilme\MegaFilme\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Home\source\repos\MegaFilme\MegaFilme\obj\Debug\netcoreapp2.0\MegaFilme.AssemblyInfoInputs.cache
+C:\Users\Home\source\repos\MegaFilme\MegaFilme\obj\Debug\netcoreapp2.0\MegaFilme.AssemblyInfo.cs
+C:\Users\Home\source\repos\MegaFilme\MegaFilme\obj\Debug\netcoreapp2.0\MegaFilme.dll
+C:\Users\Home\source\repos\MegaFilme\MegaFilme\obj\Debug\netcoreapp2.0\MegaFilme.pdb

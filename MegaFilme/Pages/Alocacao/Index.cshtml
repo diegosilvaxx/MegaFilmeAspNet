@@ -1,0 +1,60 @@
+﻿@page
+@model MegaFilme.Pages.Account.Alocacao.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Alugar Filmes</h2>
+
+<p>
+    <a asp-page="Create">Alugar novo Filme</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.AlocacaoFilmes[0].Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AlocacaoFilmes[0].Cpf)
+                </th>
+                <th>
+                    Nome do Filme
+                </th>
+                <th>
+                    Data de Entrega
+                </th>
+                <th>
+                    Data de Retirada
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.AlocacaoFilmes) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cpf)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeFilme)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataEntrega)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataRetirada)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

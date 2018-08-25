@@ -1,0 +1,55 @@
+﻿@page
+@model MegaFilme.Pages.Clientes.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Cadastro de Cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroCliente.Nome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CadastroCliente.Nome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroCliente.Telefone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CadastroCliente.Telefone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroCliente.Cidade)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CadastroCliente.Cidade)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroCliente.Endereco)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CadastroCliente.Endereco)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroCliente.NumCasa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CadastroCliente.NumCasa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroCliente.Cpf)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CadastroCliente.Cpf)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.CadastroCliente.Id">Editar</a> |
+    <a asp-page="./Index">Voltar a Lista</a>
+</div>

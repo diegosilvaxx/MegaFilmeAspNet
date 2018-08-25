@@ -1,0 +1,37 @@
+﻿@page
+@model MegaFilme.Pages.Filmes.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Cadastro de Filmes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroFilmes.Nome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CadastroFilmes.Nome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroFilmes.Ano)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CadastroFilmes.Ano)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroFilmes.Descricao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CadastroFilmes.Descricao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.CadastroFilmes.Id">Editar</a> |
+    <a asp-page="./Index">Voltar a Lista</a>
+</div>

@@ -1,0 +1,59 @@
+﻿@page
+@model MegaFilme.Pages.Clientes.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Criar novo usuário</h2>
+
+<h4>Cadastro de Cliente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CadastroCliente.Nome" class="control-label"></label>
+                <input asp-for="CadastroCliente.Nome" class="form-control" />
+                <span asp-validation-for="CadastroCliente.Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CadastroCliente.Telefone" class="control-label"></label>
+                <input asp-for="CadastroCliente.Telefone" class="form-control" />
+                <span asp-validation-for="CadastroCliente.Telefone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CadastroCliente.Cidade" class="control-label"></label>
+                <input asp-for="CadastroCliente.Cidade" class="form-control" />
+                <span asp-validation-for="CadastroCliente.Cidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CadastroCliente.Endereco" class="control-label"></label>
+                <input asp-for="CadastroCliente.Endereco" class="form-control" />
+                <span asp-validation-for="CadastroCliente.Endereco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CadastroCliente.NumCasa" class="control-label">Numero da Casa</label>
+                <input asp-for="CadastroCliente.NumCasa" class="form-control" />
+                <span asp-validation-for="CadastroCliente.NumCasa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CadastroCliente.Cpf" class="control-label"></label>
+                <input asp-for="CadastroCliente.Cpf" class="form-control" />
+                <span asp-validation-for="CadastroCliente.Cpf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Voltar a Lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

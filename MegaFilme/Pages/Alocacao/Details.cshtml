@@ -1,0 +1,49 @@
+﻿@page
+@model MegaFilme.Pages.Account.Alocacao.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Alocacao de Filmes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AlocacaoFilmes.Nome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AlocacaoFilmes.Nome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AlocacaoFilmes.Cpf)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AlocacaoFilmes.Cpf)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AlocacaoFilmes.NomeFilme)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AlocacaoFilmes.NomeFilme)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AlocacaoFilmes.DataEntrega)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AlocacaoFilmes.DataEntrega)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AlocacaoFilmes.DataRetirada)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AlocacaoFilmes.DataRetirada)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.AlocacaoFilmes.Id">Editar</a> |
+    <a asp-page="./Index">Voltar a Lista</a>
+</div>
