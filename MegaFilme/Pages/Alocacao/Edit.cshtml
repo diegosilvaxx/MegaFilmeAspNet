@@ -1,5 +1,5 @@
 ﻿@page
-@model MegaFilme.Pages.Account.Alocacao.EditModel
+@model MegaFilme.Pages.Alocacao.EditModel
 
 @{
     ViewData["Title"] = "Edit";
@@ -15,7 +15,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="AlocacaoFilmes.Id" />
             <div class="form-group">
-                <label asp-for="AlocacaoFilmes.Nome" class="control-label">Nome do Cliente</label>
+                <label asp-for="AlocacaoFilmes.Nome" class="control-label"></label>
                 <input asp-for="AlocacaoFilmes.Nome" class="form-control" />
                 <span asp-validation-for="AlocacaoFilmes.Nome" class="text-danger"></span>
             </div>
@@ -38,6 +38,16 @@
                 <label asp-for="AlocacaoFilmes.DataRetirada" class="control-label">Data de Retirada</label>
                 <input asp-for="AlocacaoFilmes.DataRetirada" class="form-control" />
                 <span asp-validation-for="AlocacaoFilmes.DataRetirada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AlocacaoFilmes.ValorDiaria" class="control-label"> Valor da Diaria</label>
+                <input asp-for="AlocacaoFilmes.ValorDiaria" class="form-control" />
+                <span asp-validation-for="AlocacaoFilmes.ValorDiaria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AlocacaoFilmes.ValorTotal" class="control-label">Valor Total</label>
+                <input asp-for="AlocacaoFilmes.ValorTotal" class="form-control" />
+                <span asp-validation-for="AlocacaoFilmes.ValorTotal" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Salvar" class="btn btn-default" />

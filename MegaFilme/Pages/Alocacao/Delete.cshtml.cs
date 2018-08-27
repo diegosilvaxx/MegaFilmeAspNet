@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using MegaFilme.Data;
 using MegaFilme.Models;
 
-namespace MegaFilme.Pages.Account.Alocacao
+namespace MegaFilme.Pages.Alocacao
 {
     public class DeleteModel : PageModel
     {

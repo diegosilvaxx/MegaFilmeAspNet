@@ -35,7 +35,7 @@
                 <span asp-validation-for="CadastroCliente.Endereco" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CadastroCliente.NumCasa" class="control-label">Numero da Casa</label>
+                <label asp-for="CadastroCliente.NumCasa" class="control-label"></label>
                 <input asp-for="CadastroCliente.NumCasa" class="form-control" />
                 <span asp-validation-for="CadastroCliente.NumCasa" class="text-danger"></span>
             </div>
@@ -43,6 +43,11 @@
                 <label asp-for="CadastroCliente.Cpf" class="control-label"></label>
                 <input asp-for="CadastroCliente.Cpf" class="form-control" />
                 <span asp-validation-for="CadastroCliente.Cpf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CadastroCliente.Email" class="control-label"></label>
+                <input asp-for="CadastroCliente.Email" class="form-control" />
+                <span asp-validation-for="CadastroCliente.Email" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Salvar" class="btn btn-default" />

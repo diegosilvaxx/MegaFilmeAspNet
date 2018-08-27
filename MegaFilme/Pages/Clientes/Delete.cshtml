@@ -5,11 +5,9 @@
     ViewData["Title"] = "Delete";
 }
 
-<h2>Delete</h2>
+<h2>Deletar</h2>
 
-<h3>
-    Tem certeza de que deseja excluir isso?
-</h3>
+<h3>Tem certeza de que deseja excluir isso?</h3>
 <div>
     <h4>Cadastro de Cliente</h4>
     <hr />
@@ -49,6 +47,12 @@
         </dt>
         <dd>
             @Html.DisplayFor(model => model.CadastroCliente.Cpf)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroCliente.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CadastroCliente.Email)
         </dd>
     </dl>
     

@@ -15,7 +15,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="CadastroFilmes.Id" />
             <div class="form-group">
-                <label asp-for="CadastroFilmes.Nome" class="control-label">Nome do Filme</label>
+                <label asp-for="CadastroFilmes.Nome" class="control-label"></label>
                 <input asp-for="CadastroFilmes.Nome" class="form-control" />
                 <span asp-validation-for="CadastroFilmes.Nome" class="text-danger"></span>
             </div>
@@ -28,6 +28,11 @@
                 <label asp-for="CadastroFilmes.Descricao" class="control-label"></label>
                 <input asp-for="CadastroFilmes.Descricao" class="form-control" />
                 <span asp-validation-for="CadastroFilmes.Descricao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CadastroFilmes.Genero" class="control-label"></label>
+                <input asp-for="CadastroFilmes.Genero" class="form-control" />
+                <span asp-validation-for="CadastroFilmes.Genero" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Salvar" class="btn btn-default" />

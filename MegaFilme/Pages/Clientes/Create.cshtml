@@ -5,9 +5,9 @@
     ViewData["Title"] = "Create";
 }
 
-<h2>Criar novo usuário</h2>
+<h2>Cadastro de Cliente</h2>
 
-<h4>Cadastro de Cliente</h4>
+<h4>Novo Usuário</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -20,7 +20,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="CadastroCliente.Telefone" class="control-label"></label>
-                <input asp-for="CadastroCliente.Telefone" class="form-control" />
+                <input type="tel" asp-for="CadastroCliente.Telefone" class="form-control" placeholder="(xx) xxxx-xxxx" />
                 <span asp-validation-for="CadastroCliente.Telefone" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -39,9 +39,14 @@
                 <span asp-validation-for="CadastroCliente.NumCasa" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CadastroCliente.Cpf" class="control-label"></label>
-                <input asp-for="CadastroCliente.Cpf" class="form-control" />
+                <label asp-for="CadastroCliente.Cpf" class="control-label">CPF</label>
+                <input asp-for="CadastroCliente.Cpf" class="form-control" placeholder="xxxx-xxxx-xx" />
                 <span asp-validation-for="CadastroCliente.Cpf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CadastroCliente.Email" class="control-label"></label>
+                <input type="email" asp-for="CadastroCliente.Email" class="form-control" />
+                <span asp-validation-for="CadastroCliente.Email" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Cadastrar" class="btn btn-default" />

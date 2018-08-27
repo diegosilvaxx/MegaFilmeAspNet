@@ -5,22 +5,25 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Cadastro de Filmes</h2>
+<h2>Filmes</h2>
 
 <p>
-    <a asp-page="Create">Cadastrar filme</a>
+    <a asp-page="Create">Cadastrar novo Filme</a>
 </p>
 <table class="table">
     <thead>
         <tr>
                 <th>
-                    Nome do Filme
+                    @Html.DisplayNameFor(model => model.CadastroFilmes[0].Nome)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.CadastroFilmes[0].Ano)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.CadastroFilmes[0].Descricao)
+                </th>
+                <th>
+                    Gênero
                 </th>
             <th></th>
         </tr>
@@ -36,6 +39,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genero)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
